@@ -558,7 +558,8 @@ describe "opscode-account containers", :containers do
       end
     end # context DELETE /containers/<name>
 
-    context "PUT /containers/<name>" do
+    pending "PUT /containers/<name>" do
+      pending("A decision on obsoleting 'path' in containers")
       context "permissions" do
         let(:new_container_payload) {{
             "containername" => test_container,
