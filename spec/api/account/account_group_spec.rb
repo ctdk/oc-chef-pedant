@@ -1038,7 +1038,7 @@ describe "opscode-account groups", :groups do
             }}
 
           it "returns 400", :validation do
-            pending "returns 500 instead" do
+            #pending "returns 500 instead" do
               put(request_url, platform.admin_user,
                 :payload => new_group_payload).should look_like({
                   :status => 400
@@ -1047,7 +1047,7 @@ describe "opscode-account groups", :groups do
                   :status => 200,
                   :body_exact => default_group_body
                 })
-            end
+            #end
           end
         end # context with bogus client
 
@@ -1060,7 +1060,7 @@ describe "opscode-account groups", :groups do
             }}
 
           it "returns 400", :validation do
-            pending "returns 500 instead" do
+            #pending "returns 500 instead" do
               put(request_url, platform.admin_user,
                 :payload => new_group_payload).should look_like({
                   :status => 400
@@ -1069,7 +1069,7 @@ describe "opscode-account groups", :groups do
                   :status => 200,
                   :body_exact => default_group_body
                 })
-            end
+            #end
           end
         end # context with bogus user
 
@@ -1082,7 +1082,7 @@ describe "opscode-account groups", :groups do
             }}
 
           it "returns 400", :validation do
-            pending "returns 500 instead" do
+            #pending "returns 500 instead" do
               put(request_url, platform.admin_user,
                 :payload => new_group_payload).should look_like({
                   :status => 400
@@ -1091,7 +1091,7 @@ describe "opscode-account groups", :groups do
                   :status => 200,
                   :body_exact => default_group_body
                 })
-            end
+            #end
           end
         end # context with bogus group
 
@@ -1137,7 +1137,7 @@ describe "opscode-account groups", :groups do
             }}
 
           it "returns 400", :validation do
-            pending "returns 200(!) instead (but it doesn't actually change anything)" do
+            #pending "returns 200(!) instead (but it doesn't actually change anything)" do
               put(request_url, platform.admin_user,
                 :payload => new_group_payload).should look_like({
                   :status => 400
@@ -1146,7 +1146,7 @@ describe "opscode-account groups", :groups do
                   :status => 200,
                   :body_exact => default_group_body
                 })
-            end
+            #end
           end
         end # context with bogus actors
       end # context updating groups

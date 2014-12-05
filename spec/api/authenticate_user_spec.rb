@@ -100,9 +100,9 @@ describe 'authenticate_user', :users do
         })
     end
 
-    it 'returns 404 ("Not Found") for invalid user' do
+    it 'returns 401 ("Not Authorized") for invalid user' do
       get(request_url, invalid_user).should look_like({
-          :status => invalid_verb_response_code
+          :status => 401
         })
     end
 
@@ -128,9 +128,9 @@ describe 'authenticate_user', :users do
         })
     end
 
-    it 'returns 404 ("Not Found") for invalid user' do
+    it 'returns 401 ("Not Authorized") for invalid user' do
       put(request_url, invalid_user, :payload => body).should look_like({
-          :status => invalid_verb_response_code
+          :status => 401
         })
     end
 
@@ -458,7 +458,7 @@ describe 'authenticate_user', :users do
 
       it 'invalid user returns 401 ("Unauthorized") (ruby) or 400 ("Bad Request") (erlang)', :authentication, :validation do
         post(request_url, invalid_user).should look_like({
-            :status => ruby? ? 401 : 400
+            :status => 401
           })
       end
     end
@@ -544,7 +544,7 @@ describe 'authenticate_user', :users do
 
     it 'returns 404 ("Not Found") for invalid user' do
       delete(request_url, invalid_user).should look_like({
-          :status => invalid_verb_response_code
+          :status => 401
         })
     end
 

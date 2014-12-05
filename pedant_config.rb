@@ -113,9 +113,9 @@ ldap({
 
 
 superuser_name 'pivotal'
-superuser_key  '/etc/opscode/pivotal.pem'
+superuser_key  '/etc/chef-server/pivotal.pem'
 
-webui_key '/etc/opscode/webui_priv.pem'
+webui_key '/etc/chef-server/default-webui.pem'
 
 requestors({
              :clients => {
@@ -202,6 +202,8 @@ requestors({
 # necessary.  A common reason is to take into account different error
 # message formatting between the two implementations.
 #
-ruby_users_endpoint? true
-ruby_org_assoc? true
-ruby_org_acl_endpoint? true
+ruby_users_endpoint? false
+ruby_org_assoc? false
+ruby_org_acl_endpoint? false
+ruby_organizations_endpoint? false
+ruby_org_endpoint? false
