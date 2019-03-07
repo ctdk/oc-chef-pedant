@@ -823,7 +823,7 @@ describe "ACL API", :acl do
               "id" => new_object,
               "containerpath" => "/"
             }}
-          let(:actors) { [platform.admin_user.name] }
+          let(:actors) { ["pivotal", platform.admin_user.name] }
           let(:groups) { [] }
           let(:grant_groups) { [] }
         when "data"
