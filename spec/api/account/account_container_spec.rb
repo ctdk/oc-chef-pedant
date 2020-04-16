@@ -26,9 +26,13 @@ describe "opscode-account containers", :containers do
           "data" => "#{request_url}/data",
           "environments" => "#{request_url}/environments",
           "groups" => "#{request_url}/groups",
+          "log-infos" => "#{request_url}/log-infos",
           "nodes" => "#{request_url}/nodes",
+          "reports" => "#{request_url}/reports",
           "roles" => "#{request_url}/roles",
-          "sandboxes" => "#{request_url}/sandboxes"
+          "sandboxes" => "#{request_url}/sandboxes",
+          "shovey-keys" => "#{request_url}/shovey-keys",
+          "shoveys" => "#{request_url}/shoveys"
         }}
 
       context "admin user" do
@@ -97,9 +101,13 @@ describe "opscode-account containers", :containers do
           "data" => "#{request_url}/data",
           "environments" => "#{request_url}/environments",
           "groups" => "#{request_url}/groups",
+          "log-infos" => "#{request_url}/log-infos",
           "nodes" => "#{request_url}/nodes",
+          "reports" => "#{request_url}/reports",
           "roles" => "#{request_url}/roles",
-          "sandboxes" => "#{request_url}/sandboxes"
+          "sandboxes" => "#{request_url}/sandboxes",
+          "shovey-keys" => "#{request_url}/shovey-keys",
+          "shoveys" => "#{request_url}/shoveys"
         }}
 
       let(:list_of_containers_with_new_container) {{
@@ -109,9 +117,13 @@ describe "opscode-account containers", :containers do
           "data" => "#{request_url}/data",
           "environments" => "#{request_url}/environments",
           "groups" => "#{request_url}/groups",
+          "log-infos" => "#{request_url}/log-infos",
           "nodes" => "#{request_url}/nodes",
+          "reports" => "#{request_url}/reports",
           "roles" => "#{request_url}/roles",
           "sandboxes" => "#{request_url}/sandboxes",
+          "shovey-keys" => "#{request_url}/shovey-keys",
+          "shoveys" => "#{request_url}/shoveys",
           new_container => "#{request_url}\/#{new_container}",
         }}
 
