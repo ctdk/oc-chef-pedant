@@ -4,5 +4,5 @@ gemspec
 
 # Specify a Github repo for this, since it isn't in Rubygems yet
 gem 'rspec', '~>2.14.0'
-gem "rest-client", :git => "https://github.com/chef/rest-client.git", :branch => 'main'
+gem "rest-client", :git => "https://github.com/chef/rest-client.git", :tag => 'v1.7.3'
 gem 'chef-pedant', :git => "https://github.com/chef-boneyard/chef-pedant.git", :tag => '1.0.36'
