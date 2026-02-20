@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/opscode/chef-pedant.git
+  remote: git://github.com/chef-boneyard/chef-pedant.git
   revision: dad401df0955eafa3c8d3052e05e713d7c45b3de
   tag: 1.0.36
   specs:
@@ -16,7 +16,7 @@ GIT
       rspec_junit_formatter (~> 0.1.1)
 
 GIT
-  remote: git://github.com/opscode/rest-client.git
+  remote: git://github.com/chef/rest-client.git
   revision: ba0d12258b77791d8f7d9776d008eb6fa3580ccc
   specs:
     rest-client (1.7.0.alpha)
